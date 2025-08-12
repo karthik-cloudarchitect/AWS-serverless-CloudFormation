@@ -1,6 +1,28 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: Serverless Architecture with API Gateway, Lambda, and DynamoDB
+
+# =============================================================================
+# Serverless User Management System - CloudFormation Template
+# =============================================================================
+# This SAM template deploys a complete serverless user management system
+# with CRUD operations, secure API endpoints, and scalable backend services.
+#
+# Architecture Components:
+# - Lambda functions for user operations (Create, Read, Update, Delete, List)
+# - DynamoDB table for user data persistence
+# - API Gateway for RESTful endpoints
+# - IAM roles with least privilege access
+# - CloudWatch logging and monitoring
+#
+# Deployment: Use AWS SAM CLI for deployment
+# Testing: Includes comprehensive test suite
+# Security: CORS enabled, input validation, error handling
+# =============================================================================
+
+Description: |
+  This SAM template deploys a complete serverless user management system
+  with CRUD operations, secure API endpoints, and scalable backend services.
+  |
 
 Parameters:
   Environment:
