@@ -1,3 +1,32 @@
+# =============================================================================
+# AWS Serverless Application Dependencies
+# =============================================================================
+# This requirements file contains all Python dependencies needed for the
+# serverless Lambda functions in this project.
+#
+# Core Dependencies:
+# - boto3: AWS SDK for Python (Lambda runtime includes this, but specified for local dev)
+# - botocore: Low-level AWS service access (dependency of boto3)
+#
+# Testing Dependencies:
+# - pytest: Testing framework for unit tests
+# - moto: AWS service mocking for testing
+# - pytest-cov: Coverage reporting for tests
+#
+# Development Dependencies:
+# - black: Code formatting
+# - flake8: Linting and style checking
+# - mypy: Static type checking
+#
+# Installation:
+#   pip install -r requirements.txt
+#
+# Note: Lambda runtime provides boto3 and botocore, but local development
+# and testing requires explicit installation.
+#
+# Last Updated: $(date +'%Y-%m-%d')
+# =============================================================================
+
 # AWS SDK and Lambda Dependencies
 # Keep boto3 and botocore versions compatible for AWS Lambda runtime
 boto3==1.34.0          # AWS SDK for Python - required for all AWS service interactions
